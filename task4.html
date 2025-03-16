@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Web App</title>
+  <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do App</h1>
+
+    <!-- Add Task Form -->
+    <div class="task-form">
+      <input type="text" id="task-title" placeholder="Task Title" required />
+      <textarea id="task-desc" placeholder="Task Description"></textarea>
+      <input type="datetime-local" id="task-date" />
+      <select id="task-category">
+        <option value="General">General</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+      </select>
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- Task List -->
+    <div id="task-list">
+      <h2>Tasks</h2>
+      <ul id="tasks"></ul>
+    </div>
+  </div>
+
+  <script src="task4.js"></script>
+</body>
+</html>
